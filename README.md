@@ -49,6 +49,53 @@ Make sure you have the following installed on your system:
 
 First, clone the repository to your local machine:
 
-```bash
+``bash
 git clone https://github.com/VarunReddyJunnuthula/EpiRecipes.git
-cd EpiRecipes 
+cd EpiRecipes.
+
+#### 2. Set Up the Backend
+Navigate to the backend directory and set up the Flask environment
+cd backend
+
+Create a virtual environment:
+python -m venv venv
+
+Activate the virtual environment:
+
+Windows:
+.\venv\Scripts\activate
+
+Linux/macOS:
+source venv/bin/activate
+
+Install required Python packages:
+pip install -r requirements.txt
+
+#### 3. Set Up the Frontend
+Next, navigate to the frontend directory and install the necessary packages:
+cd ../frontend
+
+Install Node.js dependencies:
+npm install
+
+#### 4. Start the Applications
+Starting the Backend
+
+Run the Flask application:
+
+python app.py
+
+Starting the Frontend
+
+In another terminal, navigate to the frontend directory and run:
+
+npm start
+
+This will start the React development server and open the application in your default web browser.
+
+### Usage
+Open your browser and go to http://localhost:3000 to access the application.
+Use the search bar to find recipes by name or ingredients.
+### Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements, bug fixes, or new features.
+
